@@ -1,47 +1,64 @@
-Next.js Dashboard App
-A simple dashboard app built with Next.js to manage and view posts using the JSONPlaceholder API.
-Features
+🚀 Next.js Dashboard App
+A sleek, responsive dashboard built with Next.js to manage and view posts using the JSONPlaceholder API.
 
-Admin Dashboard (/admin): Create, view, edit, and delete posts with a rich text editor.
-Public Site (/): View post titles and excerpts, with details at /posts/[id].
-Responsive UI: Clean design with TailwindCSS and shadcn/ui components.
-Data Handling: React Query for fast API calls and caching.
-Error Feedback: Toast notifications for user actions.
+🔧 Features
+Admin Panel (/admin): Create, edit, and delete posts with a rich text editor.
 
-Tech Stack
+Public Site (/): View post titles and details at /posts/[id].
 
+Responsive UI: Built with TailwindCSS and shadcn/ui.
+
+API Handling: Fast requests & caching via React Query.
+
+Feedback: Toast notifications for actions (success/error).
+
+🛠 Tech Stack
 Framework: Next.js (v15.3.2)
-Styling: TailwindCSS (v4), shadcn/ui
-Data: React Query (v5.80.6)
-Editor: Tiptap (v2.14.0)
-Forms: React Hook Form (v7.56.4), Zod (v3.25.46)
+
+Styling: TailwindCSS v4, shadcn/ui
+
+Data: React Query v5.80.6
+
+Editor: Tiptap v2.14.0
+
+Forms: React Hook Form v7 + Zod v3
+
 Icons: Lucide React
-Utilities: Sonner, Tailwind Merge
-Types: TypeScript (v5)
-Linting: ESLint (v9)
 
-Setup
+Utils: Sonner, Tailwind Merge
 
-Clone the repo:git clone https://github.com/salik-dev/next-portal.git
+Language: TypeScript v5
+
+Linting: ESLint v9
+
+⚙️ Setup
+bash
+Copy
+Edit
+git clone https://github.com/salik-dev/next-portal.git
 cd next-portal
+npm install
+npm run dev
+Visit: http://localhost:3000
 
+📦 Scripts
+npm run dev – Start dev server
 
-Install dependencies:npm install
+npm run build – Build for production
 
+npm run start – Run production build
 
-Start the app:npm run dev
+npm run lint – Lint code
 
-Open http://localhost:3000.
+🌐 Demo
+Live: next-portal-psi.vercel.app
 
-Scripts
+Repo: github.com/salik-dev/next-portal
 
-npm run dev: Run dev server.
-npm run build: Build for production.
-npm run start: Start production server.
-npm run lint: Lint code.
+📌 Notes
+No authentication required
 
-Demo
-Live: https://next-portal-psi.vercel.app/Repo: https://github.com/salik-dev/next-portal
-Notes
+Posts use mock data from JSONPlaceholder
 
-Posts are mock data from JSONPlaceholder API.
+Need to enhancement:
+some react editor body field functionality not working like (headings, list, quote)
