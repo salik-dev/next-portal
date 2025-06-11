@@ -1,64 +1,60 @@
-🚀 Next.js Dashboard App
-A sleek, responsive dashboard built with Next.js to manage and view posts using the JSONPlaceholder API.
+# 🚀 Next.js Dashboard App
 
-🔧 Features
-Admin Panel (/admin): Create, edit, and delete posts with a rich text editor.
+A sleek, responsive dashboard built with **Next.js** to manage and view posts using the [JSONPlaceholder API](https://jsonplaceholder.typicode.com).
 
-Public Site (/): View post titles and details at /posts/[id].
+![App Screenshot](https://next-portal-psi.vercel.app/og.png) <!-- Replace with your actual screenshot or remove this line -->
 
-Responsive UI: Built with TailwindCSS and shadcn/ui.
+---
 
-API Handling: Fast requests & caching via React Query.
+## 🔧 Features
 
-Feedback: Toast notifications for actions (success/error).
+- **Admin Panel** (`/admin`)  
+  Create, edit, and delete posts using a **rich text editor** (Tiptap).
+  
+- **Public Site** (`/`)  
+  Browse post titles and read full content at `/posts/[id]`.
 
-🛠 Tech Stack
-Framework: Next.js (v15.3.2)
+- **Responsive UI**  
+  Built using **TailwindCSS** and **shadcn/ui** components.
 
-Styling: TailwindCSS v4, shadcn/ui
+- **API Handling**  
+  Fast, cache-enabled API calls via **React Query**.
 
-Data: React Query v5.80.6
+- **User Feedback**  
+  Toast notifications (success/error) powered by **Sonner**.
 
-Editor: Tiptap v2.14.0
+---
 
-Forms: React Hook Form v7 + Zod v3
+## 🛠 Tech Stack
 
-Icons: Lucide React
+| Category      | Tools & Libraries                                   |
+| ------------- | --------------------------------------------------- |
+| **Framework** | [Next.js](https://nextjs.org) v15.3.2               |
+| **Styling**   | [TailwindCSS](https://tailwindcss.com) v4, [shadcn/ui](https://ui.shadcn.com) |
+| **Data**      | [React Query](https://tanstack.com/query/latest) v5.80.6 |
+| **Editor**    | [Tiptap](https://tiptap.dev) v2.14.0                |
+| **Forms**     | [React Hook Form](https://react-hook-form.com) v7 + [Zod](https://zod.dev) v3 |
+| **Validations**     | [React Hook Form] ==> validate by using zod library with react-hook-form |
+| **Icons**     | [Lucide React](https://lucide.dev)                  |
+| **Utils**     | [Sonner](https://sonner.emilkowal.ski), Tailwind Merge |
+| **Language**  | TypeScript v5                                       |
+| **Linting**   | ESLint v9                                           |
 
-Utils: Sonner, Tailwind Merge
+---
 
-Language: TypeScript v5
+## ⚙️ Setup
 
-Linting: ESLint v9
-
-⚙️ Setup
-bash
-Copy
-Edit
+```bash
+# Clone the repository
 git clone https://github.com/salik-dev/next-portal.git
 cd next-portal
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
-Visit: http://localhost:3000
 
-📦 Scripts
-npm run dev – Start dev server
+## ⚙️ Need to enhancement or active functionality
+In React text editor for post body field headings, list, quotes not work
 
-npm run build – Build for production
-
-npm run start – Run production build
-
-npm run lint – Lint code
-
-🌐 Demo
-Live: next-portal-psi.vercel.app
-
-Repo: github.com/salik-dev/next-portal
-
-📌 Notes
-No authentication required
-
-Posts use mock data from JSONPlaceholder
-
-Need to enhancement:
-some react editor body field functionality not working like (headings, list, quote)
