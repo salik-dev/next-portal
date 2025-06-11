@@ -2,7 +2,7 @@
 
 A sleek, responsive dashboard built with **Next.js** to manage and view posts using the [JSONPlaceholder API](https://jsonplaceholder.typicode.com).
 
-![App Screenshot](https://next-portal-psi.vercel.app/og.png) <!-- Replace with your actual screenshot or remove this line -->
+![App Demo](https://next-portal-psi.vercel.app/) 
 
 ---
 
